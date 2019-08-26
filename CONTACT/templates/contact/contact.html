@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+<center>
+    <h1>Contact Us</h1>
+</center><br><br><br>
+<div class="container">
+    <div class="col-sn-6">
+        <div class="panel panel-default">
+            <div class="panel-heading">We would love to hear from You</div>
+            <div class="panel-body">
+
+<form method="post">
+    {% csrf_token %}
+    {{form.as_p}}
+    <input class="btn btn-primary" type="submit" value="Send Message">
+
+    <form>
+    </div>
+    </div>
+    </div>
+    </div>
+
+
+</body>
+</html>
